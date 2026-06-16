@@ -565,6 +565,9 @@ document.head.appendChild(style);
 initTheme();
 initParticles();
 temaInput.focus();
+// Preenche o ano do copyright dinamicamente
+// assim nunca precisa atualizar manualmente
+document.getElementById('footerYear').textContent = new Date().getFullYear();
 
 // Auto-detect if backend is running
 (async () => {
